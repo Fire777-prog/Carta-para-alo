@@ -1,0 +1,1502 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Georgia", serif;
+  overflow-x: hidden;
+  background: #0f172a;
+}
+
+/* ===========================
+   FONDO
+=========================== */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #10152b 0%,
+    #1b2d52 35%,
+    #516c94 70%,
+    #f5ddd5 100%
+  );
+}
+
+/* ===========================
+   ESTRELLAS
+=========================== */
+
+.stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, white 2px, transparent 2px),
+    radial-gradient(circle, white 1px, transparent 1px),
+    radial-gradient(circle, white 2px, transparent 2px);
+  background-size:
+    220px 220px,
+    170px 170px,
+    300px 300px;
+  background-position:
+    20px 30px,
+    100px 80px,
+    200px 150px;
+  opacity: .45;
+  animation: starsMove 12s ease-in-out infinite alternate;
+}
+
+@keyframes starsMove {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-25px);
+  }
+}
+
+/* ===========================
+   LUNA
+=========================== */
+
+.moon {
+  position: fixed;
+  top: 70px;
+  right: 90px;
+
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+
+  background: #fffdf7;
+
+  box-shadow:
+    0 0 35px rgba(255,255,255,.6),
+    0 0 80px rgba(255,255,255,.3);
+
+  z-index: 1;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 2;
+
+  padding: 40px;
+}
+
+.hero h1 {
+
+  font-size: clamp(52px,7vw,90px);
+
+  color: white;
+
+  margin-bottom: 15px;
+
+  letter-spacing: 2px;
+
+}
+
+.subtitle {
+
+  color: #f5e7e1;
+
+  font-size: 22px;
+
+  margin-bottom: 45px;
+
+}
+
+.open-btn {
+
+  text-decoration: none;
+
+  color: white;
+
+  background: #d98ca8;
+
+  padding: 18px 38px;
+
+  border-radius: 999px;
+
+  font-size: 18px;
+
+  transition: .35s;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.open-btn:hover {
+
+  transform: translateY(-4px) scale(1.03);
+
+  background: #cb7697;
+
+}
+
+/* ===========================
+   CARTA
+=========================== */
+
+.letter-section {
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 120px 20px;
+
+}
+
+.letter {
+
+  width: min(900px,95%);
+
+  background: #f8efe8;
+
+  border-radius: 24px;
+
+  padding: 70px;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.25);
+
+  position: relative;
+
+}
+
+.letter::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 18px;
+
+  border: 1px solid rgba(214,171,185,.35);
+
+  border-radius: 18px;
+
+  pointer-events: none;
+
+}
+
+.letter h2 {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  color: #c56f8e;
+
+  margin-bottom: 45px;
+
+}
+
+.letter p {
+
+  color: #55453f;
+
+  font-size: 19px;
+
+  line-height: 2;
+
+  margin-bottom: 26px;
+
+}/* ===========================
+   FIRMA
+=========================== */
+
+.signature {
+  margin-top: 60px;
+  text-align: center;
+  border-top: 1px solid rgba(214, 171, 185, 0.4);
+  padding-top: 40px;
+}
+
+.signature p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #6b5550;
+}
+
+.signature h3 {
+  font-size: 38px;
+  color: #c56f8e;
+  margin-bottom: 18px;
+}
+
+.signature span {
+  display: block;
+  font-size: 16px;
+  color: #7a6963;
+  font-style: italic;
+}
+
+/* ===========================
+   GALERÍA
+=========================== */
+
+.gallery {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 44px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.photos {
+  width: min(1100px, 95%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+}
+
+.photo {
+  height: 260px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #888;
+
+  font-size: 20px;
+
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+
+  transition: .35s;
+}
+
+.photo:hover {
+  transform: translateY(-8px) rotate(2deg);
+}
+
+/* ===========================
+   MÚSICA
+=========================== */
+
+.music {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.music h2 {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.music a {
+  display: inline-block;
+
+  padding: 18px 34px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.18);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  transition: .3s;
+}
+
+.music a:hover {
+  background: rgba(255,255,255,.28);
+  transform: scale(1.04);
+}
+
+/* ===========================
+   FINAL
+=========================== */
+
+footer {
+  padding: 70px 20px;
+  text-align: center;
+  color: white;
+  opacity: .8;
+  font-size: 15px;
+}/* =====================================
+   ANIMACIONES
+===================================== */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.hero,
+.letter,
+.gallery,
+.music {
+
+  animation: fadeUp 1s ease;
+
+}
+
+.moon {
+
+  animation: float 5s ease-in-out infinite;
+
+}
+
+.photo {
+
+  animation: float 7s ease-in-out infinite;
+
+}
+
+.photo:nth-child(2) {
+
+  animation-delay: .5s;
+
+}
+
+.photo:nth-child(3) {
+
+  animation-delay: 1s;
+
+}
+
+.photo:nth-child(4) {
+
+  animation-delay: 1.5s;
+
+}
+
+.photo:nth-child(5) {
+
+  animation-delay: 2s;
+
+}
+
+.photo:nth-child(6) {
+
+  animation-delay: 2.5s;
+
+}
+
+/* =====================================
+   SCROLL
+===================================== */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+  background: #d8c7c1;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #c56f8e;
+
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+  background: #b85d7d;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+  .hero h1 {
+
+    font-size: 58px;
+
+  }
+
+  .subtitle {
+
+    font-size: 18px;
+
+  }
+
+  .moon {
+
+    width: 90px;
+    height: 90px;
+
+    top: 35px;
+    right: 35px;
+
+  }
+
+  .letter {
+
+    padding: 35px 28px;
+
+  }
+
+  .letter h2 {
+
+    font-size: 34px;
+
+  }
+
+  .letter p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+  }
+
+  .gallery h2 {
+
+    font-size: 34px;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+
+    padding: 20px;
+
+  }
+
+  .hero h1 {
+
+    font-size: 44px;
+
+  }
+
+  .subtitle {
+
+    font-size: 17px;
+
+  }
+
+  .open-btn {
+
+    padding: 15px 28px;
+
+    font-size: 16px;
+
+  }
+
+  .letter {
+
+    width: 94%;
+
+    padding: 28px 20px;
+
+  }
+
+  .letter h2 {
+
+    font-size: 30px;
+
+  }
+
+  .letter p {
+
+    font-size: 16px;
+
+  }
+
+  .photos {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .photo {
+
+    height: 220px;
+
+  }
+
+}
+
+/* =====================================
+   DETALLES
+===================================== */
+
+.hero::after {
+
+  content: "☁";
+
+  position: absolute;
+
+  bottom: 90px;
+
+  left: 12%;
+
+  color: rgba(255,255,255,.25);
+
+  font-size: 80px;
+
+}
+
+.hero::before {
+
+  content: "☁";
+
+  position: absolute;
+
+  top: 140px;
+
+  right: 15%;
+
+  color: rgba(255,255,255,.20);
+
+  font-size: 65px;
+
+}
+
+.letter:hover {
+
+  transform: translateY(-4px);
+
+  transition: .35s;
+
+}
+
+.music {
+
+  padding-bottom: 150px;
+
+}hr{
+  margin:40px 0;
+  border:none;
+  border-top:1px solid #d6b7b7;
+}
+
+.gallery{
+  margin-top:30px;
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:18px;
+}
+
+.photo{
+
+  width:100%;
+
+  height:220px;
+
+  object-fit:cover;
+
+  border-radius:18px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+  transition:.35s;
+
+}
+
+.photo:hover{
+
+  transform:scale(1.04);
+
+}/* Contenedor de la carta */
+.letter {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+
+  padding: 45px 35px;
+
+  background: #f8eadf;
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+}
+
+
+/* Sección de fotos */
+
+.gallery-section {
+
+  width: 90%;
+  max-width: 900px;
+
+  margin: 60px auto;
+
+  text-align: center;
+
+}
+
+
+.gallery-section h2 {
+
+  color: #c56d8b;
+
+  margin-bottom: 30px;
+
+}
+
+
+/* Fotos abajo */
+
+.gallery {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+}
+
+
+.photo {
+
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  background:white;
+
+  padding:10px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+  transition:.3s;
+
+}
+
+
+.photo:hover {
+
+  transform: translateY(-8px);
+
+}
+
+
+/* Canción */
+
+.music {
+
+  text-align:center;
+
+  margin:60px auto;
+
+}/* Contenedor de la carta */
+.letter {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+
+  padding: 45px 35px;
+
+  background: #f8eadf;
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+}
+
+
+/* Sección de fotos */
+
+.gallery-section {
+
+  width: 90%;
+  max-width: 900px;
+
+  margin: 60px auto;
+
+  text-align: center;
+
+}
+
+
+.gallery-section h2 {
+
+  color: #c56d8b;
+
+  margin-bottom: 30px;
+
+}
+
+
+/* Fotos abajo */
+
+.gallery {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+}
+
+
+.photo {
+
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  background:white;
+
+  padding:10px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+  transition:.3s;
+
+}
+
+
+.photo:hover {
+
+  transform: translateY(-8px);
+
+}
+
+
+/* Canción */
+
+.music {
+
+  text-align:center;
+
+  margin:60px auto;
+
+}@media(max-width:700px){
+
+  .gallery{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .letter{
+
+    padding:30px 20px;
+
+  }
+
+
+  .photo{
+
+    height:320px;
+
+  }
+
+}/* Ajustes para celular */
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 20px 0;
+  }
+
+
+  .card {
+    width: 92%;
+    padding: 35px 25px;
+  }
+
+
+  .letter {
+    width: 92%;
+    padding: 30px 22px;
+    margin: 20px auto;
+  }
+
+
+  h1 {
+    font-size: 32px;
+  }
+
+
+  h2 {
+    font-size: 28px;
+  }
+
+
+  p,
+  .letter-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+
+  .cloud {
+    font-size: 45px;
+  }
+
+
+  .flowers {
+    font-size: 30px;
+  }
+
+
+  .gallery-section {
+    width: 92%;
+  }
+
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+
+  .photo {
+    height: 300px;
+  }
+
+
+  .music {
+    width: 92%;
+  }
+
+}/* Orden vertical en toda la página */
+
+.letter,
+.gallery-section,
+.music {
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* En celular todo baja uno debajo de otro */
+
+@media (max-width: 600px) {
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .letter {
+    order: 1;
+    width: 92%;
+  }
+
+
+  .gallery-section {
+    order: 2;
+    width: 92%;
+  }
+
+
+  .music {
+    order: 3;
+    width: 92%;
+  }
+
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+
+  .photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+}/* Fotos estilo polaroid */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
+.photo {
+  background: white;
+  padding: 12px;
+  padding-bottom: 35px;
+
+  width: 100%;
+  height: 280px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+
+  transition: .3s;
+
+}
+
+
+/* Pequeñas inclinaciones para que parezcan fotos reales */
+
+.photo:nth-child(1) {
+  transform: rotate(-3deg);
+}
+
+.photo:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+.photo:nth-child(3) {
+  transform: rotate(-2deg);
+}
+
+.photo:nth-child(4) {
+  transform: rotate(3deg);
+}
+
+.photo:nth-child(5) {
+  transform: rotate(-1deg);
+}
+
+.photo:nth-child(6) {
+  transform: rotate(2deg);
+}
+
+
+.photo:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 2;
+}
+
+
+/* Celular */
+
+@media(max-width:700px){
+
+  .gallery{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+
+  .photo{
+
+    height:320px;
+
+  }
+
+}/* Animación suave de aparición */
+
+.letter,
+.gallery-section,
+.music {
+  animation: aparecer 1s ease;
+}
+
+
+@keyframes aparecer {
+
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}/* Decoración romántica de la carta */
+
+.letter {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* pequeñas flores en las esquinas */
+
+.letter::before {
+  content: "🌸";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 35px;
+}
+
+
+.letter::after {
+  content: "🌸";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 35px;
+}/* Arreglo del desplazamiento de la carta */
+
+.letter {
+  max-height: none;
+  height: auto;
+  overflow: visible;
+}
+
+
+/* La página completa permite hacer scroll */
+
+.page {
+
+  min-height: 100vh;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow-x: hidden;
+
+  padding: 40px 0;
+
+
+  background:
+    radial-gradient(circle at top, #fff1f5 0%, transparent 35%),
+    linear-gradient(
+      180deg,
+      #f8dce5,
+      #f6e6df,
+      #fff8f2
+    );
+
+}button {
+
+  margin-top: 25px;
+
+  padding: 16px 38px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #e8a1b8,
+    #d98ca8
+  );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-family: Georgia, serif;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(217,140,168,.35);
+
+  transition: .3s;
+
+}
+
+
+button:hover {
+
+  transform: translateY(-5px) scale(1.05);
+
+  box-shadow: 0 12px 25px rgba(217,140,168,.45);
+
+}.music {
+
+  display: block;
+
+  width: 90%;
+
+  max-width: 450px;
+
+  margin: 50px auto;
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: rgba(248,238,232,.95);
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+.music a {
+
+  color: #c56d8b;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+}.page {
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255, 200, 220, .9),
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      #4b466d,
+      #c58da5,
+      #f7d9d2,
+      #fff0eb
+    );
+
+}/* Aparición especial de la carta */
+
+.letter {
+
+  animation: cartaAparece 1.2s ease;
+
+}
+
+
+@keyframes cartaAparece {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(50px) scale(.95);
+
+  }
+
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+
+  }
+
+}button {
+
+  animation: respirar 2.5s infinite;
+
+}
+
+
+@keyframes respirar {
+
+  0% {
+
+    transform: scale(1);
+
+  }
+
+
+  50% {
+
+    transform: scale(1.05);
+
+  }
+
+
+  100% {
+
+    transform: scale(1);
+
+  }
+
+}.memory {
+
+  text-align: center;
+
+}
+
+
+.memory p {
+
+  margin-top: 10px;
+
+  font-style: italic;
+
+  color: #805b65;
+
+}.memory p {
+
+  display: block;
+
+  margin-top: 15px;
+
+  color: #5c3d45;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  font-style: italic;
+
+  opacity: 1;
+
+}.memory {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+.memory p {
+  display: block !important;
+
+  color: #5c3d45 !important;
+
+  font-size: 17px !important;
+
+  line-height: 1.5;
+
+  margin-top: 15px;
+
+  text-align: center;
+
+  font-style: italic;
+
+  opacity: 1 !important;
+
+  visibility: visible !important;
+}/* Tarjeta bonita de música */
+
+.music {
+
+  width: 90%;
+
+  max-width: 450px;
+
+  margin: 60px auto;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: rgba(255, 239, 230, .95);
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.25);
+
+  animation: aparecer 1s ease;
+
+}
+
+
+.music h2 {
+
+  font-size: 50px;
+
+  margin-bottom: 10px;
+
+}
+
+
+.music a {
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 15px 30px;
+
+  border-radius: 40px;
+
+  background: linear-gradient(
+    135deg,
+    #e8a1b8,
+    #d98ca8
+  );
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  transition: .3s;
+
+}
+
+
+.music a:hover {
+
+  transform: scale(1.05);
+
+}/* Arreglo texto de música */
+
+.music h2,
+.music a {
+
+  display: block !important;
+
+  visibility: visible !important;
+
+  opacity: 1 !important;
+
+}
+
+
+.music a {
+
+  color: white !important;
+
+}.final-message {
+
+  width: 90%;
+
+  max-width: 500px;
+
+  margin: 50px auto 100px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: rgba(255,239,230,.95);
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+.final-message p {
+
+  color: #57423c;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+}
+
+
+.final-message h3 {
+
+  color: #c56d8b;
+
+  margin-top: 25px;
+
+}
+
+
+.final-message h1 {
+
+  color: #c56d8b;
+
+  font-size: 38px;
+
+}.music h2 {
+  color: #57423c;
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
