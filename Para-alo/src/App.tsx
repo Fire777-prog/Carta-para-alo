@@ -41,7 +41,7 @@ function App() {
 
           <p>
              Hice este pequeño lugar para ti,
-  con mucho cariño y pensando en cada cosa que pasamos.
+  con mucho cariño y pensando algunas cosas que pasamos.
           </p>
 
 
@@ -199,10 +199,12 @@ function App() {
 </div>
 
 
-      <section className="music">
 
+    </section>
+
+<section className="music">
   <h2>
-    Tengo todo lo que siempre quise, y es tenerte a ti
+    Tengo todo lo que siempre quise, y es tenerte a ti ❤️
   </h2>
 
   <a
@@ -212,12 +214,9 @@ function App() {
   >
     Apocalypse — Cigarettes After Sex
   </a>
-
 </section>
 
-          </section>
 <section className="final-message">
-
   <p>
     Gracias por llegar hasta aquí ❤️
   </p>
@@ -233,67 +232,14 @@ function App() {
   <h1>
     Leo ❤️
   </h1>
-
 </section>
-
 
         </>
 
-
       )}
-
 
     </div>
   );
-}{/* Música */}
-
-<section className="music">
-
-  <h2>
-    🎵
-  </h2>
-
-  <a
-    href="https://open.spotify.com/search/apocalypse%20cigarettes%20after%20sex"
-    target="_blank"
-    rel="noreferrer"
-  >
-    Apocalypse — Cigarettes After Sex
-  </a>
-
-</section>
-
-
-{/* Final */}
-
-<section className="final-message">
-
-  <div className="letter-decoration">
-    🌸 ✨ 🌸
-  </div>
-
-
-  <p>
-    Gracias por llegar hasta aquí ❤️
-  </p>
-
-
-  <p>
-    Espero que esta pequeña sorpresa
-    consiga sacarte una sonrisa.
-  </p>
-
-
-  <h3>
-    Con cariño,
-  </h3>
-
-
-  <h1>
-    Leo ❤️
-  </h1>
-
-
-</section>
+}
 
 export default App;

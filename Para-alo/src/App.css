@@ -945,7 +945,7 @@ footer {
   }
 
 
-  .gallery-section {
+   .gallery-section {
     width: 92%;
   }
 
@@ -1517,7 +1517,8 @@ button:hover {
   font-size: 28px;
   line-height: 1.4;
   margin-bottom: 20px;
-}@keyframes letterAppear {
+}
+@keyframes letterAppear {
 
   from {
 
@@ -1533,6 +1534,30 @@ button:hover {
 
     transform: translateY(0) scale(1);
 
+  }
+
+}@media (max-width: 768px) {
+
+  .final-message{
+    order: 999;
+    margin-top: 60px;
+  }
+
+}@media (max-width: 768px) {
+
+  .letter,
+  .gallery-section,
+  .music,
+  .final-message{
+    position: static !important;
+    transform: none !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    margin: 40px auto !important;
+    width: 92% !important;
   }
 
 }
