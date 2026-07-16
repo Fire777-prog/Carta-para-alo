@@ -1,12 +1,17 @@
 import { ShoppingCart } from "lucide-react";
+import { useStore } from "../context/StoreContext";
 
 type Product = {
+  id: number;
   name: string;
   price: number;
   image: string;
 };
 
-function ProductCard({ name, price, image }: Product) {
+function ProductCard({ id, name, price, image }: Product) {
+
+  const { addToCart } = useStore();
+
   return (
     <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
@@ -18,17 +23,28 @@ function ProductCard({ name, price, image }: Product) {
         />
       </div>
 
+
       <div className="p-5">
 
         <h3 className="text-xl font-bold text-gray-800">
           {name}
         </h3>
 
+
         <p className="mt-2 text-2xl font-extrabold text-blue-600">
           ${price}
         </p>
 
+
         <button
+          onClick={() =>
+            addToCart({
+              id,
+              name,
+              price,
+              image,
+            })
+          }
           className="
             mt-5 flex w-full items-center justify-center gap-2
             rounded-xl bg-yellow-400 py-3
@@ -40,6 +56,7 @@ function ProductCard({ name, price, image }: Product) {
           <ShoppingCart size={20} />
           Agregar al carrito
         </button>
+
 
       </div>
 
