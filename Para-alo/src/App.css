@@ -1465,7 +1465,9 @@ button:hover {
 
   color: white !important;
 
-}.final-message {
+}
+
+.final-message {
 
   width: 90%;
 
@@ -1512,7 +1514,9 @@ button:hover {
 
   font-size: 38px;
 
-}.music h2 {
+}
+
+.music h2 {
   color: #57423c;
   font-size: 28px;
   line-height: 1.4;
@@ -1559,5 +1563,176 @@ button:hover {
     margin: 40px auto !important;
     width: 92% !important;
   }
+
+}
+.two-months{
+
+    width:min(850px,92%);
+    margin:80px auto;
+
+    background:#fff8f6;
+
+    border-radius:30px;
+
+    padding:60px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.two-months-decoration{
+
+    text-align:center;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.two-months h2{
+
+    text-align:center;
+
+    color:#cc6d8e;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+}
+
+.two-months-text{
+
+    color:#5b4842;
+
+    line-height:2;
+
+    font-size:19px;
+
+}
+
+.two-months-text p{
+
+    margin-bottom:22px;
+
+}.two-months {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  margin: 80px auto !important;
+  background: #fff8f6 !important;
+  padding: 60px !important;
+  border-radius: 30px !important;
+}/* ---------- Canción ---------- */
+
+.song-memory{
+
+    width:min(850px,92%);
+    margin:70px auto;
+
+    background:#fff7f8;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.song-memory h2{
+
+    color:#cc6d8e;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.song-memory p{
+
+    color:#5b4842;
+
+    font-size:19px;
+
+    margin-bottom:25px;
+
+    line-height:1.8;
+
+}
+
+.song-memory a{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    background:#d97d9d;
+
+    color:white;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.song-memory a:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ---------- Poema ---------- */
+
+.poem{
+
+    width:min(850px,92%);
+    margin:70px auto;
+
+    background:#fffdfb;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.poem h2{
+
+    text-align:center;
+
+    color:#cc6d8e;
+
+    margin-bottom:35px;
+
+    font-size:36px;
+
+}
+
+.poem-text{
+
+    color:#5b4842;
+
+    font-size:20px;
+
+    line-height:2.1;
+
+}
+
+.poem-text p{
+
+    margin-bottom:28px;
 
 }

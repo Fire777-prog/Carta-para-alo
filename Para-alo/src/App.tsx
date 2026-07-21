@@ -234,6 +234,132 @@ function App() {
   </h1>
 </section>
 
+<section className="two-months">
+
+  <div className="two-months-decoration">
+    🌸 ✨ 🌸
+  </div>
+
+  <h2>Dos meses contigo ❤️</h2>
+
+  <div className="two-months-text">
+
+   <p>
+  Holiii, Alo. ❤️
+</p>
+
+<p>
+  Si estás leyendo esto, significa que este pequeño lugar volvió a crecer un poquito.
+</p>
+
+<p>
+  Hoy ya son dos meses desde que decidimos estar juntos, y no quería dejar pasar la oportunidad de volver a escribirte aquí.
+</p>
+
+<p>
+  Durante este tiempo me he dado cuenta de algo muy bonito: desde que formas parte de mi vida de esta forma, me nacen ganas de aprender cosas nuevas, de hacer detallitos como este y de encontrar formas diferentes de recordarte lo importante que eres para mí.
+</p>
+
+<p>
+  A veces me gana la emoción, me emociono tanto por tenerte conmigo que quisiera decirte todo lo que siento de una sola vez, llenar los días de mensajes, de cartas y de pequeños detalles. Pero también he entendido que querer a alguien no solo es demostrarle cuánto lo quieres; también es aprender a escucharla, respetar sus tiempos y procurar que siempre se sienta cómoda.
+</p>
+
+<p>
+  Quiero seguir aprendiendo a quererte. No porque haya algo malo en cómo soy cuando estoy contigo, sino porque creo que querer también es crecer de la mano de la otra persona.
+</p>
+
+<p>
+  Gracias por estos dos meses.
+</p>
+
+<p>
+  Gracias por los abrazos, por cada conversación, por cada risa, por dejarme conocerte un poquito más y por regalarme tantos momentos que ahora forman parte de mis recuerdos favoritos.
+</p>
+
+<p>
+  Y ojalá este pequeño rincón pueda seguir creciendo con nosotros, poco a poco, sin prisas, guardando los momentos que más nos hagan sonreír.
+</p>
+
+    <div className="signature">
+      <h3>Con cariño,</h3>
+      <h2>Leo ❤️</h2>
+    </div>
+
+  </div>
+
+</section>
+<section className="song-memory">
+
+  <div className="two-months-decoration">
+    🎵 🤍 🎵
+  </div>
+
+  <h2>
+    Hay canciones que inevitablemente me llevan a ti
+  </h2>
+
+  <p>
+    No sé si esta canción habla exactamente de nosotros,
+    pero cada vez que la escucho termino pensando en ti.
+    Hay algo en ella que siempre consigue recordarme lo
+    bonito que es compartir mi vida contigo.
+  </p>
+
+  <a
+    href="https://open.spotify.com/search/Materia%20Gris%20El%20Rique"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Materia Gris — El Rique 🎵
+  </a>
+
+</section>
+
+
+<section className="poem">
+
+  <div className="two-months-decoration">
+    🌸 ✨ 🌸
+  </div>
+
+  <h2>Algo que quisiera darte...</h2>
+
+  <div className="poem-text">
+
+    <p>
+      Qué más quisiera regalarte todas las flores del mundo.
+
+No porque crea que las necesites, sino porque me gustaría que, cada vez que vieras una, recordaras lo bonita que haces mi vida desde que llegaste a ella.
+    </p>
+
+    <p>
+      Qué más quisiera bajarte la luna y las estrellas,
+      pero ellas también iluminan el camino de muchas personas.
+    </p>
+
+    <p>
+      Si pudiera regalarte el sol,
+      lo haría sin pensarlo,
+      aunque entonces dejaría de existir esa luz
+      con la que puedo seguir viendo tu sonrisa,
+      esa que tanto me gusta.
+    </p>
+
+    <p>
+      No puedo darte el mundo entero,
+      porque no me pertenece.
+    </p>
+
+    <p>
+      Pero sí puedo darte mi tiempo,
+      mi cariño,
+      mi corazón
+      y todo el amor que tengo para compartir contigo.
+      </p>
+      
+  </div>
+
+</section>
         </>
 
       )}
